@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3c52c599-8c81-4833-b0e2-57bf30064624)# PowerBI_Project
+
 
 <h1>Project Introduction</h1> 
 In this project, i mainly use PowerBi to analyze. To complete project, i did these steps:
