@@ -63,14 +63,14 @@ Note: Remember to delete duplicate data in “Customer ID”
 
 **Last step, I will create “Dim_date” via dax language in “table mode”**
 
-I create it via using “Calendar” function in dax language. 
-The code is: Date_dim = calendar(min(Fact_sale[Order Date]), max(Fact_sale[Order Date]))
-Then, I will make more columns about year, quarter, month, day
-The code are:
-Year = year(Date_dim[Date])
-Quarter = quarter(Date_dim[Date])
-Month = Month(Date_dim[Date])
-Day = Day(Date_dim[Date])
+I create it via using “Calendar” function in dax language. <br>
+The code is: Date_dim = calendar(min(Fact_sale[Order Date]), max(Fact_sale[Order Date])) <br>
+Then, I will make more columns about year, quarter, month, day <br>
+The code are: <br>
+Year = year(Date_dim[Date]) <br>
+Quarter = quarter(Date_dim[Date]) <br>
+Month = Month(Date_dim[Date]) <br>
+Day = Day(Date_dim[Date]) <br>
 (Note: we need mark as date table to create a “Date_dim” table)
 
 Lastly, I turn off “Auto date” in setting to improve query performance.
@@ -81,10 +81,10 @@ And this is date model, it is Star Schema as I expected
 
 <h4>I use DAX to calculate to visualize graphs and come up insights.</h4>
 
-Here are my code using in this  file to calculate:
-Total Sales: Total = CALCULATE(sum(Fact_sale[Sales]), all(Fact_sale))
-Total Quantity: Total Quantity = sum(Fact_sale[Quantity])
-To calculate sale percentage: %Sales = Divide(sum(Fact_sale[Sales]),[Total])
+Here are my code using in this  file to calculate: <br>
+Total Sales: Total = CALCULATE(sum(Fact_sale[Sales]), all(Fact_sale)) <br>
+Total Quantity: Total Quantity = sum(Fact_sale[Quantity]) <br>
+To calculate sale percentage: %Sales = Divide(sum(Fact_sale[Sales]),[Total]) <br>
 
 <h3>IV.Visualize results</h3>
 
@@ -94,18 +94,18 @@ To calculate sale percentage: %Sales = Divide(sum(Fact_sale[Sales]),[Total])
 
 This report mainly is made for sales manager, so we mainly focus on sale performance. 
 There are some general observation we can have:
--In category, Office Supplies and Technology are 2 main categories that account for 80% of total sales.
--In segment, this store has two main types of customers, which are Corporate and Home Office account for more than 80% of total sales. As results, we can conclude our main customers are bussiness, our main work are B2B bussiness.
--Two largest markets are West and East.
+-In category, Office Supplies and Technology are 2 main categories that account for 80% of total sales. <br>
+-In segment, this store has two main types of customers, which are Corporate and Home Office account for more than 80% of total sales. As results, we can conclude our main customers are bussiness, our main work are B2B bussiness. <br>
+-Two largest markets are West and East. <br>
 
 Moreover, we can go to detail parts:
--Because Technology and Office Supplies are accounted for 80% of sales, so we care about which specific of products are sold most. Top 5 products are: “3D Systems,2nd Generation, Magenta”; “Canon ImageClass 2200 Advanced Copier”; “Hewlett Packard LaserJet3310 Copier”, “GBC DocuBind Tl300 Electric Binding System”.
+-Because Technology and Office Supplies are accounted for 80% of sales, so we care about which specific of products are sold most. Top 5 products are: “3D Systems,2nd Generation, Magenta”; “Canon ImageClass 2200 Advanced Copier”; “Hewlett Packard LaserJet3310 Copier”, “GBC DocuBind Tl300 Electric Binding System”. <br>
 
--Most of top-sale products whose category are Technology and Office Supplies are sold in East Location. Interestingly, the top one of selling, “3D Systems, 2nd Generation, Magenta”, are just sold in East Location. 
--In East market, from January to May, people mostly buy Electric Open Letter, so it is a good information to prepare inventory. From June to December, customers start to buy more products which are in top 5 selling products.
+-Most of top-sale products whose category are Technology and Office Supplies are sold in East Location. Interestingly, the top one of selling, “3D Systems, 2nd Generation, Magenta”, are just sold in East Location.  <br>
+-In East market, from January to May, people mostly buy Electric Open Letter, so it is a good information to prepare inventory. From June to December, customers start to buy more products which are in top 5 selling products. <br>
 
 Now, we care more about customer behaviors.
--Top 5 products that 80% of customers buy are 
+-Top 5 products that 80% of customers buy are  <br>
 •	“3D Systems Cube Printer, 2nd Generation, Magenta”; 
 •	“GBC Docubind TL300 Electric Binding System”;
 •	“Martin Yale Chadless Opener Electric Letter Opener”; 
