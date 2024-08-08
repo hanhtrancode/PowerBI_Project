@@ -2,11 +2,11 @@
 
 <h1>Project Introduction</h1> 
 In this project, i mainly use PowerBi to analyze. To complete project, i did these steps:
-1.Loading Excel Workbook to Power BI
-2.Cleaning Data
-3.Modeling Data
-4.Visualizing Data
-5.Personal Observation
+1.Loading Excel Workbook to Power BI <br>
+2.Cleaning Data <br>
+3.Modeling Data <br>
+4.Visualizing Data <br>
+5.Personal Observation <br>
 6.Suggestion
 
 <h1>Data Introduction</h1> 
