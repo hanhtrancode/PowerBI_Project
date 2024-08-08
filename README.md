@@ -31,17 +31,40 @@ Then, I delete “Row ID+O6G3A1:R6” to make a better one, change its name to �
 In this data, I decided to have 1 fact tables and 4 dimension tables, which are “Dim_product”, “Dim_location”, “Dim_customer”, “Dim_date”.
 
 **In fact table, the table look like this.**
-![image](https://github.com/user-attachments/assets/3badd534-ad74-4d60-add0-7bd4507567f6)
+
+![image](https://github.com/user-attachments/assets/caf01419-3adb-4a62-b465-7f726bf4e233)
+
 
 You may wonder why I don’t put “OrderID”, “Order Date”, “Ship Date”, “Ship Mode” together and make a new “Dim_order” table. We can see that “OrderID” is not doing a good job as a primary key because with 1 primary key in “OrderID”, we will have 2 different information. For example, you can see in line 1, 2 and 3, the “OrderID” are both “CA-2019-160304” but “ProductId”, “Sales”, and “Quantity” are different. So we can be sure that with “OrderId” is not unique, and it should  not be the primary key. To ensure the consistency and precise of data, I keep “OrderDate”, “ShipDate” and “ShipMode” in fact table.
 
 **Illutration about “Dim_product” table.**
+
 Content: The table will provide all information about product.
 Note: Remember to delete duplicate data in “ProductID”
-![image](https://github.com/user-attachments/assets/6abd6750-e44b-416b-a1c8-1ca1a54596ae)
+
+![image](https://github.com/user-attachments/assets/d4c03bf6-1f13-4e51-8d42-bc16c5688390)
+
 
 **Illustation about “Dim_location” table**
-![image](https://github.com/user-attachments/assets/9aeefa44-dac5-484a-b6aa-14951ca1fc61)
+Content: The table will provide all information about location.
+Note: Remember to delete duplicate data in “City”
+
+
+![image](https://github.com/user-attachments/assets/511a9d90-1a3a-41ee-bd14-0b28f7e06c4d)
+
+
+**Illustation about “Dim_customer” table**
+
+Content: The table will provide all information about customer.
+Note: Remember to delete duplicate data in “Customer ID”
+
+![image](https://github.com/user-attachments/assets/8e95a142-ab0e-4677-922f-f54451177e90)
+
+
+
+
+
+
 
 
 
